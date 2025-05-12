@@ -2,7 +2,7 @@ import numpy as np
 import collections as col
 import pandas as pd
 
-def replacearray(originaltargetarray, originalsubarray, newsubarray, newsubarraydtype=np.unicode):
+def replacearray(originaltargetarray, originalsubarray, newsubarray, newsubarraydtype=str):
         import numpy as np
         newtargetarray=np.array(np.empty((len(originaltargetarray),len(newsubarray[0]))),dtype=newsubarraydtype)
         for i in range(len(originaltargetarray)):
